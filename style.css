@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-size: 15px;
+}
+.hero{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-container{
+    width: 55%;
+    height: 400px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px ;
+}
+.c1{
+    width: 33.3%;
+    height: 400px;
+    /* border: 1px solid; */
+    display: flex;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: hsl(31, 77%, 52%);
+    position: relative;
+}
+.c2{
+    position: relative;
+    width: 33.3%;
+    height: 400px;
+    /* border: 1px solid; */
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+}
+.c3{
+    position: relative;
+    width: 33.3%;
+    height: 400px;
+    /* border: 1px solid; */
+    display: flex;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: hsl(179, 100%, 13%);
+
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    opacity: .8;
+    line-height: 19px;
+    font-size:15px;
+}
+img{
+    margin: 15px 0px 0px 15px;
+}
+.c1-text{
+    position: absolute;
+    /* border: 1px solid; */
+    top: 70px;
+    color: white;
+    text-align: start;
+    margin: 15px 15px 0px 15px;
+}
+.c2-text{
+    position: absolute;
+    /* border: 1px solid; */
+    top: 70px;
+    color: white;
+    text-align: start;
+    margin: 15px 15px 0px 15px;
+}
+.c3-text{
+    position: absolute;
+    /* border: 1px solid; */
+    top: 70px;
+    color: white;
+    text-align: start;
+    margin: 15px 15px 0px 15px;
+}
+
+.c1-button{
+    /* border: 1px solid; */
+    width: 122px;
+    height: 40px;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    color:  hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.c2-button{
+    text-align: center;
+    /* border: 1px solid; */
+    width: 122px;
+    height: 40px;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    border-radius: 20px;
+    background-color: white;
+    color:  hsl(184, 100%, 22%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.c3-button{
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    /* border: 1px solid; */
+    width: 122px;
+    height: 40px;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.button{
+    padding-top: 10px;
+}
+.c1-button:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.c2-button:hover{
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+}
+.c3-button:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+@media screen and (max-width:430px) {
+    .content-container{
+        flex-wrap: wrap;
+
+    }
+    .c1{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+    }
+    .c2{
+        width: 100%;
+        border-radius: 0px;
+        
+
+    }
+    .c3{
+        width: 100%;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    body{
+        height: 1000px;
+        background-color: hsl(0, 0%, 95%);
+    }
+    .hero{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
